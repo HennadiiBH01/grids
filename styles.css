@@ -1,0 +1,72 @@
+body {
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-repeat: no-repeat;
+    margin: 0;
+    min-height: 100dvh;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body > h1 {
+    margin: 32px 0 10px 0;
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    max-width: 960px;
+    margin: auto;
+}
+
+.card {
+    padding: 24px;
+    background: white;
+    border-radius: 5px;
+    transition: scale 0.3s;
+    text-align: center;
+}
+
+.card > img {
+    height: 64px;
+    width: 64px;
+    fill: white;
+    background: rgba(0,0,0,0.8);
+    border-radius: 100%;
+    padding: 24px;
+}
+
+.card > p {
+    color: rgba(0,0,0,0.7)
+}
+
+.card > h3 {
+    font-size: 1.6rem;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+
+.card:hover {
+    scale: 1.03;
+}
+
+button {
+    cursor: pointer;
+    padding: 12px;
+    font-size: 1.05rem;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    transition: scale 0.3s 0.05s;
+}
+
+button:hover {
+    scale: 1.1 1;
+}
